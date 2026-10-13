@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Shop<span>Smart.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="cart-btn" id="cartButton">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">YOUR STYLE, YOUR CHOICE</p>
+            <h1>Find Your<br>Next Favorite.</h1>
+            <p>Discover quality products, trending styles, and everyday essentials at great prices.</p>
+            <a href="#products" class="shop-btn">Explore Products →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern fashion and retail store">
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div>🚚 <strong>Free Delivery</strong><small>On orders over ₹999</small></div>
+        <div>🔒 <strong>Secure Shopping</strong><small>Shop with confidence</small></div>
+        <div>↩️ <strong>Easy Returns</strong><small>Simple return process</small></div>
+    </section>
+
+    <main id="products">
+        <div class="section-heading">
+            <div>
+                <p class="tagline">OUR COLLECTION</p>
+                <h2>Popular Products</h2>
+            </div>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products">
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-category="All">All</button>
+            <button class="filter" data-category="Electronics">Electronics</button>
+            <button class="filter" data-category="Fashion">Fashion</button>
+            <button class="filter" data-category="Accessories">Accessories</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <p id="emptyMessage" hidden>No products found. Try another search.</p>
+    </main>
+
+    <section class="about" id="about">
+        <h2>Shopping Made Simple</h2>
+        <p>ShopSmart brings everyday essentials and trending products together in one convenient place.</p>
+    </section>
+
+    <footer>
+        <a href="#" class="logo">Shop<span>Smart.</span></a>
+        <p>© 2026 ShopSmart. Student project for Front End Development.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
